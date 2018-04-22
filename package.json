@@ -1,0 +1,23 @@
+{
+  "name": "portal_noticia",
+  "version": "1.0.0",
+  "description": "Site de Noticias",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JozielOliveira/Node.git"
+  },
+  "author": "Joziel Oliveira Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JozielOliveira/Node/issues"
+  },
+  "homepage": "https://github.com/JozielOliveira/Node#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3"
+  }
+}
