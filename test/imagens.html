@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/campaign" method="POST" enctype="multipart/form-data">
+        <p><label>Descrição</label></p>
+        <input type="text" name="description">
+        <p><label>Logotipo</label></p>
+        <input type="file" name="logotipo">
+        <p><label>Como Funciona</label></p>
+        <input type="text" name="how_works">
+        <p><label>Como Contribuir</label></p>
+        <input type="text" name="how_pay">
+        <p><label>Image Promocional</label></p>
+        <input type="file" name="imagem_promo">
+        <p><label>HashTag</label></p>
+        <input type="text" name="hashtag">
+        <p><label>Link do Facebook</label></p>
+        <input type="text" name="facebook_page">
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

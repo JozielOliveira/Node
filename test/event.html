@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/event" method="POST" enctype="multipart/form-data">
+        <p><label>title</label></p>
+        <input type="text" name="title">
+        <p><label>Descrição</label></p>
+        <input type="text" name="description">
+        <p><label>Foto Principal</label></p>
+        <input type="file" name="main_photo">
+        <p><label>Fotos</label></p>
+        <input type="file" name="photos" id="photos" src="C:\Users\progr\Downloads\0.jpg">
+        <div id="p"></div>
+        <input type="button" onclick="add()" value="add"></input>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    
+</body>
+
+</html>
+
+<script>
+
+    function add() {
+
+        let input = document.getElementById("photos")
+        let item = document.createElement("input")
+        
+        item.setAttribute("type", "file")
+        item.setAttribute("name", "photos")
+        item.setAttribute("onclick", "apagar(this)")
+
+        document.getElementById("p").appendChild(item)
+
+    }
+
+    function apagar(i) {
+
+        lista.removeChild(i)
+
+    }
+
+</script>
